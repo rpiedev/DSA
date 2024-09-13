@@ -18,5 +18,5 @@ struct str {
 };
 
 std::ostream &operator<<(std::ostream &out, const str &s);
-std::istream &operator>>(std::istream &in, const str &s);
+std::istream &operator>>(std::istream &in, str &s);
 str &operator+(str &s, const char c);

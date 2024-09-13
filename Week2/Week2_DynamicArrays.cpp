@@ -21,7 +21,9 @@ bool CheckPalindrome(str input) {
 }
 
 int main() {
-    str input = str("Take me in and get me reversed!");
+    str input = str("");
+    std::cout << "Please type your input (Press enter when done): ";
+    std::cin >> input;
     str output = StringReverse(input);
     str isPalindrome = str(CheckPalindrome(input) == 0 ? "NOT Palindrome" : "YES Palindrome");
 

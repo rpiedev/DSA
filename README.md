@@ -4,4 +4,4 @@
 
 ### Assignments
 
-- [Week 2, Dynamic Arrays](./Week2/)
+- [Week 2, Dynamic Arrays](./Week2/) - COMPLETE

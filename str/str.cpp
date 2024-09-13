@@ -68,6 +68,14 @@ std::ostream &operator<<(std::ostream &out, const str &s) {
     }
     return out;
 }
+std::istream &operator>>(std::istream &in, str &s) {
+    charNode *workingNode = s.string;
+    char c;
+    while(in.get(c) && c != '\n') {
+        s + c;
+    }
+    return in;
+}
 str &operator+(str &s, const char c) {
     charNode *newChar = new charNode;
     charNode *end = s.string->Get(s.length);
